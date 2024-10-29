@@ -1,0 +1,225 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(240, 255, 255, 0.801);
+}
+
+.header-block {
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  font-size: 30px;
+}
+
+.header-block h1 {
+  font-style: oblique;
+  color: rgba(194, 55, 31, 0.733);
+}
+
+.main {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 760px;
+}
+
+.main-card {
+  max-width: 70vh;
+  margin-left: 500px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d2b48c;
+  height: 130px;
+}
+
+.btn {
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2px solid black;
+  background-color: #80800094;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px black;
+}
+
+.btn2 {
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2px solid black;
+  background-color: #80800094;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px black;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainOtherHTML {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 25vh;
+}
+.text {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.Task2PNG {
+  display: flex;
+  justify-content: center;
+}
+.task1BTN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-left: 45%;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+}
+.panel3 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 33vh;
+}
+.task2BTN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  margin-left: 45%;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+}
+.task4BTN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 45%;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+}
+.panel7 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+}
+.Task7PNG {
+  display: flex;
+  justify-content: space-around;
+}
+.panel8 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+.panel9 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+}
+.panel10 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 44vh;
+}
+.panel11 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 46vh;
+}
+.text12 {
+  margin-top: 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+.tg {
+  margin-bottom: px;
+}
+.panel12 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 46vh;
+}
