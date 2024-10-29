@@ -112,12 +112,11 @@ a {
 }
 
 .panel {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 25vh;
+  min-height: 25vh;
 }
 .text {
   font-size: 22px;
@@ -140,12 +139,11 @@ a {
   height: 30px;
 }
 .panel3 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 33vh;
+  min-height: 33vh;
 }
 .task2BTN {
   display: flex;
@@ -168,7 +166,6 @@ a {
   height: 30px;
 }
 .panel7 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
@@ -180,23 +177,20 @@ a {
   justify-content: space-around;
 }
 .panel8 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
 }
 .panel9 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
 }
 .panel10 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
@@ -204,12 +198,11 @@ a {
   height: 44vh;
 }
 .panel11 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 46vh;
+  min-height: 46vh;
 }
 .text12 {
   margin-top: 20px;
@@ -221,10 +214,9 @@ a {
   margin-bottom: px;
 }
 .panel12 {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 46vh;
+  min-height: 46vh;
 }
