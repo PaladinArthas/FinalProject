@@ -138,6 +138,7 @@ a {
   font-size: 20px;
   width: 200px;
   height: 30px;
+  margin-left: 45%;
 }
 .panel3 {
   display: none;
@@ -196,7 +197,7 @@ a {
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 44vh;
+  min-height: 44vh;
 }
 .panel11 {
   display: none;
