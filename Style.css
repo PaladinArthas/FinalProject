@@ -23,7 +23,7 @@ a {
 
 .header-block h1 {
   font-style: oblique;
-  color: rgba(194, 55, 31, 0.733);
+  color: rgba(34, 6, 1, 0.719);
 }
 
 .main {
@@ -31,8 +31,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 760px;
+  font-size: 30px;
+  font-style: oblique;
   align-items: center;
   flex: 1;
 }
@@ -47,14 +49,19 @@ a {
   background-color: #d2b48c;
   height: 130px;
 }
-
+.navigation a {
+  font-style: oblique;
+  color: #000000;
+}
 .btn {
   font-size: 20px;
-  width: 200px;
-  height: 60px;
+  font-style: oblique;
+  width: 270px;
+  height: 65px;
   border-radius: 100px;
   border: 2px solid black;
   background-color: #80800094;
+  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,20 +69,8 @@ a {
   margin-bottom: 50px;
   box-shadow: 1px 1px black;
 }
-
-.btn2 {
-  font-size: 20px;
-  width: 200px;
-  height: 60px;
-  border-radius: 100px;
-  border: 2px solid black;
-  background-color: #80800094;
-  display: flex;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-left: 30px;
-  margin-bottom: 50px;
-  box-shadow: 1px 1px black;
+btn:hover {
+  background-color: #d4b90c;
 }
 .tasks {
   display: flex;
@@ -221,4 +216,17 @@ a {
   overflow: hidden;
   width: 100%;
   min-height: 46vh;
+}
+panel18 {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 200%;
+  min-height: 50vh;
+  flex-direction: column;
+  align-items: center;
+}
+Task18PNG {
+  display: flex;
+  justify-content: space-around;
 }

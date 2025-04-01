@@ -55,7 +55,7 @@ function showModal5() {
 }
 function showModal6() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 700) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -63,7 +63,7 @@ function showModal6() {
 }
 function showModal7() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+  if (name == 2341) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -71,7 +71,7 @@ function showModal7() {
 }
 function showModal8() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3241) {
+  if (name == 14) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -79,7 +79,7 @@ function showModal8() {
 }
 function showModal9() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 4) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -87,7 +87,7 @@ function showModal9() {
 }
 function showModal10() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+  if (name == 155) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -95,7 +95,7 @@ function showModal10() {
 }
 function showModal11() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3241) {
+  if (name == 136) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -103,7 +103,7 @@ function showModal11() {
 }
 function showModal12() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 7) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -111,7 +111,7 @@ function showModal12() {
 }
 function showModal13() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+  if (name == 1008) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -119,7 +119,7 @@ function showModal13() {
 }
 function showModal14() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3241) {
+  if (name == 4) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -127,7 +127,7 @@ function showModal14() {
 }
 function showModal15() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 40700) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -135,7 +135,7 @@ function showModal15() {
 }
 function showModal16() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+  if (name == 1) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -143,7 +143,7 @@ function showModal16() {
 }
 function showModal17() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3241) {
+  if (name == 1) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -151,7 +151,7 @@ function showModal17() {
 }
 function showModal18() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 1432) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -159,7 +159,7 @@ function showModal18() {
 }
 function showModal19() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+  if (name == 9075) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -167,7 +167,7 @@ function showModal19() {
 }
 function showModal20() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3241) {
+  if (name == 7) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
@@ -175,7 +175,7 @@ function showModal20() {
 }
 function showModal21() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 3) {
+  if (name == 27) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
