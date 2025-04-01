@@ -218,7 +218,7 @@
         </div>
 
         <button class="accordion">Задание 18</button>
-        <div class="panel18">
+        <div class="panel">
           <div class="text">
             На координатной прямой отмечены точки A, B, C, и D. Про число m
             известно, что оно равно корень из 2<br />
@@ -255,6 +255,15 @@
         </div>
       </div>
     </section>
+    <footer>
+      <button id="show_result" onclick="displayQuestionState()">Показать результат</button>
+      <div id="quest_state_block">
+        <div>Вы ответили правильно на <span id="correct_answer_count"></span> из <span id="all_quest_count"></span></div>
+        <div>
+          <button onclick="dropQuestionState()">Попробовать еще раз</button>
+        </div>
+      </div>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>

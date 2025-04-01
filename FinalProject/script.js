@@ -13,14 +13,60 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function showModal1() {
-  let name = prompt("Ваш ответ?", "");
-  if (name == 13) {
+const QUEST_COUNT = 21; // кол-во вопросов
+let questState = {};
+
+function setQuestState(questId, state) {
+  // Если первый раз ответили неправильно, то не даем перезаписать
+  if (questState[questId] !== undefined) {
+    return;
+  }
+
+  questState[questId] = state;
+}
+
+// Для проверки правильности ответа передаем сюда:
+// идВопроса (questId - можно указывать число)
+// правильный ответ (target - строка с которой сравниваем)
+// ответ пользователя (answer)
+function checkCorrectAnswer(questId, target, answer) {
+  if (target == answer) {
+    // записываем первую попытку в questState
+    setQuestState(questId, true);
     alert("Правильно!");
   } else {
+    // записываем первую попытку в questState
+    setQuestState(questId, false);
     alert("Неправильно, решите ещё раз");
   }
 }
+
+function displayQuestionState() {
+  const correctQuestionsCount = Object.values(questState).filter(
+    (state) => state == true
+  ).length; // Фильтруем коллекцию ответов - берем только правильные (у которых state равен true)
+
+  document.getElementById("show_result").style.visibility = "hidden";
+  document.getElementById("quest_state_block").style.visibility = "visible";
+  document.getElementById("correct_answer_count").textContent =
+    correctQuestionsCount;
+  document.getElementById("all_quest_count").textContent = QUEST_COUNT;
+}
+
+function dropQuestionState() {
+  questState = {};
+
+  document.getElementById("show_result").style.visibility = "visible";
+  document.getElementById("quest_state_block").style.visibility = "hidden";
+  document.getElementById("correct_answer_count").textContent = "";
+  document.getElementById("all_quest_count").textContent = "";
+}
+
+function showModal1() {
+  let answer = prompt("Ваш ответ?", "");
+  checkCorrectAnswer(1, 13, answer);
+}
+
 function showModal2() {
   let name = prompt("Ваш ответ?", "");
   if (name == 3241) {
