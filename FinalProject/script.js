@@ -159,7 +159,7 @@ function showModal18() {
 }
 function showModal19() {
   let name = prompt("Ваш ответ?", "");
-  if (name == 9075) {
+  if (name == 222000) {
     alert("Правильно!");
   } else {
     alert("Неправильно, решите ещё раз");
