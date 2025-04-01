@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-block"><h1>Базовая Математика</h1></div>
+    </section>
+    <section class="mainOtherHTML">
+      <div class="tasks">
+        <button class="accordion">Задание 1</button>
+        <div class="panel">
+          <div class="text">
+            Поезд Хабаровск–Благовещенск отправляется в 13:57, а прибывает в
+            2:57 на следующий день (время московское). Сколько часов поезд
+            находится в пути? Б
+          </div>
+          <button onclick="showModal1()" class="task1BTN">Ввести ответ</button>
+        </div>
+        <button class="accordion">Задание 2</button>
+        <div class="panel">
+          <div class="text">
+            Установите соответствие между величинами и их возможными значениями:
+            к каждому элементу первого столбца подберите соответствующий элемент
+            из второго столбца.
+          </div>
+          <div class="Task2PNG">
+            <img src="ExamTasksPngs/Task2.png" width="600px" />
+          </div>
+          <button onclick="showModal2()" class="task2BTN">Ввести ответ</button>
+        </div>
+        <button class="accordion">Задание 3</button>
+        <div class="panel3">
+          <div class="text">
+            В таблице показано расписание пригородных электропоездов по
+            направлению Москва Курская — Тула.
+          </div>
+          <div class="Task2PNG"><img src="ExamTasksPngs/Task3.png" /></div>
+          <div class="text">
+            Какой из указанных электропоездов Москва Курская— Тула проводит в
+            пути меньше всего времени? В ответе укажите номер этого
+            электропоезда.
+          </div>
+          <button onclick="showModal2()" class="task2BTN">Ввести ответ</button>
+        </div>
+        <button class="accordion">Задание 4</button>
+        <div class="panel">
+          <div class="text">
+            Зная длину своего шага, человек может приближённо подсчитать
+            пройденное им расстояние s по формуле s = nl, где n — число шагов, l
+            — длина шага.<br />
+            Какое расстояние прошёл человек, если l = 80cm, a n = 1700? Ответ
+            дайте в метрах.
+          </div>
+          <button onclick="showModal4()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 5</button>
+        <div class="panel">
+          <div class="text">
+            Какова вероятность того, что случайно выбранный телефонный номер
+            оканчивается двумя чётными цифрами?
+          </div>
+          <button onclick="showModal5()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 6</button>
+        <div class="panel">
+          <div class="text">
+            Для того чтобы связать свитер, хозяйке нужно 600 граммов шерстяной
+            пряжи красного цвета. Можно купить красную пряжу по цене 60 рублей
+            за 50 граммов, а можно купить неокрашенную пряжу по цене 50 рублей
+            за 50 граммов и окрасить её. Один пакетик краски стоит 50 рублей и
+            рассчитан на окраску 300 граммов пряжи. Какой вариант покупки
+            дешевле? В ответе напишите, сколько рублей будет стоить эта покупка.
+          </div>
+          <button onclick="showModal6()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 7</button>
+        <div class="panel7">
+          <div class="text">
+            На рисунках изображены графики функций вида Установите соответствие
+            между графиками функций и знаками коэффициентов a и c.
+          </div>
+          <div class="Task7PNG">
+            <img src="ExamTasksPngs/Task7.png" width="50%" />
+            <img src="ExamTasksPngs/Task7KOEF.png" width="58%" />
+          </div>
+          <button onclick="showModal7()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 8</button>
+        <div class="panel8">
+          <div class="text">
+            Кондитер испёк 40 печений, из них 10 штук он посыпал корицей, а 20
+            штук собирается посыпать сахаром (кондитер может посыпать одно
+            печенье и корицей, и сахаром, а может вообще ничем не посыпать).
+            Выберите утверждения, которые будут верны при указанных условиях
+            независимо от того, какие печенья кондитер посыплет сахаром.<br />
+            1)Найдётся 7 печений, которые ничем не посыпаны.<br />
+            2)Найдётся 8 печений, посыпанных и сахаром, и корицей.<br />
+            3)Если печенье посыпано корицей, то оно посыпано и сахаром.<br />
+            4)Не может оказаться 12 печений, посыпанных и сахаром, и корицей.
+          </div>
+          <button onclick="showModal8()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 9</button>
+        <div class="panel9">
+          <div class="text">
+            На рисунке изображён план местности (шаг сетки плана соответствует
+            расстоянию 1км на местности). <br />Оцените, скольким квадратным
+            километрам равна площадь озера Вервижское, изображённого на плане.
+            Ответ округлите до целого числа.
+          </div>
+          <div class="Task2PNG">
+            <img src="ExamTasksPngs/Task9.png" width="380px" />
+          </div>
+          <button onclick="showModal9()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 10</button>
+        <div class="panel10">
+          <div class="text">
+            Дачный участок имеет форму прямоугольника со сторонами 25 метров и
+            40 метров.<br />
+            Хозяин планирует обнести его забором и разделить таким же забором на
+            две части, одна из которых имеет форму квадрата. Найдите суммарную
+            длину забора в метрах.
+          </div>
+          <div class="Task2PNG">
+            <img src="ExamTasksPngs/Task10.png" width="300px" />
+          </div>
+          <button onclick="showModal10()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 11</button>
+        <div class="panel11">
+          <div class="text">
+            Найдите площадь поверхности многогранника, изображенного на рисунке
+            (все двугранные углы прямые).
+          </div>
+          <div class="Task2PNG">
+            <img src="ExamTasksPngs/Task11.png" alt="" width="300px" />
+          </div>
+          <button onclick="showModal11()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 12</button>
+        <div class="panel12">
+          <div class="text">
+            В треугольнике ABC AC=BC, высота CH равна 4. Найдите AC.
+          </div>
+          <div class="Task7PNG">
+            <img src="ExamTasksPngs/Task12.png" width="300px" />
+            <img src="ExamTasksPngs/Task12Triangle.png" />
+          </div>
+          <button onclick="showModal12()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 13</button>
+        <div class="panel">
+          <div class="text">
+            Стороны основания правильной шестиугольной пирамиды равны 14,
+            боковые рёбра равны 25. Найдите площадь боковой поверхности этой
+            пирамиды.
+          </div>
+          <div class="Task2PNG">
+            <img src="ExamTasksPngs/Task13.png" />
+          </div>
+          <button onclick="showModal13()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 14</button>
+        <div class="panel">
+          <div class="text">
+            Найдите значение выражения:<img
+              src="ExamTasksPngs/Task14.png"
+              width="200px"
+            />
+          </div>
+          <button onclick="showModal14()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 15</button>
+        <div class="panel">
+          <div class="text">
+            В магазине вся мебель продаётся в разобранном виде. Покупатель может
+            заказать сборку мебели на дому, стоимость которой составляет 10% от
+            стоимости купленной мебели. Шкаф стоит 37 000 рублей. Во сколько
+            рублей обойдётся покупка этого шкафа вместе со сборкой?
+          </div>
+          <button onclick="showModal15()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 16</button>
+        <div class="panel">
+          <div class="text">
+            Найдите значение выражения:<img
+              src="ExamTasksPngs/Task16.png"
+              width="200px"
+            />
+          </div>
+          <button onclick="showModal16()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 17</button>
+        <div class="panel">
+          <div class="text">
+            Найдите корень уравнения:<img src="ExamTasksPngs/Task17.png" />
+          </div>
+          <button onclick="showModal17()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 18</button>
+        <div class="panel18">
+          <div class="text">
+            На координатной прямой отмечены точки A, B, C, и D. Про число m
+            известно, что оно равно корень из 2<br />
+            Установите соответствие между указанными точками и числами из
+            правого столбца, которые им соответствуют.<br />
+            <div class="Task18PNG">
+              <img src="ExamTasksPngs/Task18.png" />
+              <img src="ExamTasksPngs/Task18KOEF.png" />
+            </div>
+          </div>
+          <button onclick="showModal18()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 19</button>
+        <div class="panel">
+          <div class="text"></div>
+          <button onclick="showModal19()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 20</button>
+        <div class="panel">
+          <div class="text"></div>
+          <button onclick="showModal20()" class="task4BTN">Ввести ответ</button>
+        </div>
+
+        <button class="accordion">Задание 21</button>
+        <div class="panel">
+          <div class="text"></div>
+          <button onclick="showModal21()" class="task4BTN">Ввести ответ</button>
+        </div>
+      </div>
+    </section>
+    <script src="../script.js"></script>
+  </body>
+</html>
