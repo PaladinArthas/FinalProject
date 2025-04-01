@@ -244,3 +244,14 @@ footer {
   visibility: hidden;
   text-align: center;
 }
+
+#timer {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
