@@ -30,7 +30,14 @@ function setQuestState(questId, state) {
 // правильный ответ (target - строка с которой сравниваем)
 // ответ пользователя (answer)
 function checkCorrectAnswer(questId, target, answer) {
-  if (target == answer) {
+  let answerState = false;
+  if (Array.isArray(target)) {
+    answerState = target.some((target) => target == answer);
+  } else {
+    answerState = target == answer;
+  }
+
+  if (answerState) {
     // записываем первую попытку в questState
     setQuestState(questId, true);
     alert("Правильно!");
