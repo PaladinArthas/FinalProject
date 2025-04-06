@@ -142,7 +142,7 @@ function showModal18() {
   checkCorrectAnswer(18, 1432, answer);
 }
 function showModal19() {
-  let name = prompt("Ваш ответ?", "");
+  let answer = prompt("Ваш ответ?", "");
   checkCorrectAnswer(19, 222000, answer);
 }
 function showModal20() {

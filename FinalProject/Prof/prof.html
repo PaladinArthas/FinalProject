@@ -12,98 +12,244 @@
       <button onclick="initTimer()">запустить таймер</button>
     </section>
     <section class="mainOtherHTML">
-      <div class="tasks">
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 1</button>
+      <div class="panel">
+        <div class="text">
+          В треугольнике ABC угол C равен 90°, CH - высота, BH = 1, tgA = 2/3.
+          Найдите AH.
+          <div><img src="examTasksProf/task1.svg" width="300px" /></div>
         </div>
+        <button onclick="showModal1()" class="task1BTN">Ввести ответ</button>
+      </div>
+      <button class="accordion">Задание 2</button>
+      <div class="panel">
+        <div class="text">
+          Стороны правильного треугольника ABC равны 2√3. Найдите длину вектора
+          AB + AC
+          <div><img src="examTasksProf/task2.svg" /></div>
+        </div>
+        <button onclick="showModal2()" class="task2BTN">Ввести ответ</button>
+      </div>
+      <button class="accordion">Задание 3</button>
+      <div class="panel3">
+        <div class="text">
+          Найдите площадь боковой поверхности правильной шестиугольной призмы,
+          описанной около цилиндра, радиус основания которого равен √3, а высота
+          равна 2.
+        </div>
+        <div class="Task2PNG"><img src="examTasksProf/task3.svg" /></div>
+        <button onclick="showModal2()" class="task2BTN">Ввести ответ</button>
+      </div>
+      <button class="accordion">Задание 4</button>
+      <div class="panel">
+        <div class="text">
+          У Вити в копилке лежит 12 рублёвых, 6 двухрублёвых, 4 пятирублёвых и 3
+          десятирублёвых монеты. Витя наугад достаёт из копилки одну монету.
+          Найдите вероятность того, что оставшаяся в копилке сумма составит
+          более 70 рублей.
+        </div>
+        <button onclick="showModal4()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 5</button>
+      <div class="panel">
+        <div class="text">
+          При артиллерийской стрельбе автоматическая система делает выстрел по
+          цели. Если цель не уничтожена, то система делает повторный выстрел.
+          Выстрелы повторяются до тех пор, пока цель не будет уничтожена.
+          Вероятность уничтожения некоторой цели при первом выстреле равна 0,4,
+          а при каждом последующем — 0,6. Сколько выстрелов потребуется для
+          того, чтобы вероятность уничтожения цели была не менее 0,98?   В
+          ответе укажите наименьшее необходимое количество выстрелов.
         </div>
+        <button onclick="showModal5()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 6</button>
+      <div class="panel">
+        <div class="text">Найдите корень уравнения:</div>
+        <div class="Task2PNG">
+          <img src="examTasksProf/task6.svg" width="300px" />
         </div>
-        <button class="accordion">Section 4</button>
-        <div class="panel">
-          <p></p>
-        </div>
+        <button onclick="showModal6()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 5</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 7</button>
+      <div class="panel">
+        <div class="text">Найдите значение выражения:</div>
+        <div class="Task7PNG">
+          <img src="examTasksProf/task7.svg" width="50%" />
         </div>
+        <button onclick="showModal7()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 6</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 8</button>
+      <div class="panel8">
+        <div class="text">
+          На рисунке изображен график производной функции f(x), определенной на
+          интервале (-11; 3). Найдите промежутки возрастания функции f(x). В
+          ответе укажите длину наибольшего из них.
         </div>
-        <button class="accordion">Section 7</button>
-        <div class="panel">
-          <p></p>
-        </div>
+        <div><img src="examTasksProf/task8.svg" width="500px" /></div>
+        <button onclick="showModal8()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 8</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 9</button>
+      <div class="panel9">
+        <div class="text">
+          Независимое агентство намерено ввести рейтинг новостных
+          интернет-изданий на основе оценок информативности In, оперативности
+          Op, объективности публикаций Tr, а также качества сайта Q. Каждый
+          отдельный показатель - целое число от –2 до 2.<br />
+          Составители рейтинга считают, что объективность ценится втрое, а
+          информативность публикаций — впятеро дороже, чем оперативность и
+          качество сайта. Таким образом, формула приняла вид
         </div>
+        <div><img src="examTasksProf/task9.svg" width="350px" /></div>
+        <br />
+        <div class="text">
+          Если по всем четырем показателям какое-то издание получило одну и ту
+          же оценку, то рейтинг должен совпадать с этой оценкой. Найдите число
+          A, при котором это условие будет выполняться.
+        </div>
+        <button onclick="showModal9()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 9</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 10</button>
+      <div class="panel10">
+        <div class="text">
+          Плиточник планирует уложить 175м2 плитки. Если он будет укладывать на
+          10м2 в день больше, чем запланировал, то закончит работу на 2 дня
+          раньше. Сколько квадратных метров плитки в день планирует укладывать
+          плиточник?
         </div>
-        <button class="accordion">Section 10</button>
-        <div class="panel">
-          <p></p>
-        </div>
+        <button onclick="showModal10()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 11</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 11</button>
+      <div class="panel11">
+        <div class="text">
+          На рисунке изображён график функции f(x)=a^(x+b). Найдите значение х,
+          при котором f(x) = 16
         </div>
+        <div class="Task2PNG">
+          <img src="examTasksProf/task11.svg" alt="" width="300px" />
+        </div>
+        <button onclick="showModal11()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 12</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 12</button>
+      <div class="panel12">
+        <div class="text">
+          Найдите наибольшее значение функции y = -2tgX + 4X - π - 3 на отрезке
         </div>
-        <button class="accordion">Section 13</button>
-        <div class="panel">
-          <p></p>
+        <div class="Task2PNG">
+          <img src="examTasksProf/task12.svg" width="300px" />
         </div>
+        <button onclick="showModal12()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 14</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 13</button>
+      <div class="panel">
+        <div class="text">а) Решите уравнение 2xcosx + x - 4 = 0</div>
+        <div class="text">б) Укажите корни принадлежащие отрезку</div>
+        <div class="Task2PNG">
+          <img src="examTasksProf/task13.svg" width="300px" />
         </div>
+        <button onclick="showModal13()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 15</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 14</button>
+      <div class="panel">
+        <div class="text">
+          В прямоугольном параллелепипеде ABCDA1B1C1D1 известны длины рёбер:
+          AB  =  4, BC  =  3, AA1  =  2. Точки P и Q  — середины рёбер A1B1 и
+          CC1 соответственно. Плоскость APQ пересекает ребро B1C1 в точке K.<br />
+          а)  Докажите, что B1K : KC1  ="  2 : 1.<br" /> б)  Найдите площадь
+          сечения параллелепипеда ABCDA1B1C1D1 плоскостью APQ.<br />
         </div>
-        <button class="accordion">Section 16</button>
-        <div class="panel">
-          <p></p>
-        </div>
+        <button onclick="showModal14()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 17</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 15</button>
+      <div class="panel">
+        <div class="text">Решите неравенство:</div>
+        <div class="Task2PNG">
+          <img src="examTasksProf/task15.svg" width="300px" />
         </div>
+        <button onclick="showModal15()" class="task4BTN">Ввести ответ</button>
+      </div>
 
-        <button class="accordion">Section 18</button>
-        <div class="panel">
-          <p></p>
+      <button class="accordion">Задание 16</button>
+      <div class="panel">
+        <div class="text">
+          Антон является владельцем двух заводов в разных городах. На заводах
+          производится абсолютно одинаковые товары при использовании одинаковых
+          технологий. Если рабочие на одном из заводов трудятся суммарно t2
+          часов в неделю, то за эту неделю они производят t единиц товара.<br />
+          За каждый час работы на заводе, расположенном в первом городе, Антон
+          платит рабочему 250 рублей, а на заводе, расположенном во втором
+          городе, — 200 рублей.<br />
+          Антон готов выделять 900 000 рублей в неделю на оплату труда рабочих.
+          Какое наибольшее количество единиц товара можно произвести за неделю
+          на этих двух заводах?
         </div>
-        <button class="accordion">Section 19</button>
-        <div class="panel">
-          <p></p>
+        <button onclick="showModal16()" class="task4BTN">Ввести ответ</button>
+      </div>
+
+      <button class="accordion">Задание 17</button>
+      <div class="panel">
+        <div class="text">
+          Квадрат ABCD вписан в окружность. Хорда CE пересекает его диагональ BD
+          в точке K.<br />
+          <div class="text">
+            a) Докажите, что CK*CE = AB*CD<br />б)Найдите отношение CK и KE,
+            если ∠ECD = 15°
+          </div>
         </div>
+        <button onclick="showModal17()" class="task4BTN">Ввести ответ</button>
+      </div>
+
+      <button class="accordion">Задание 18</button>
+      <div class="panel">
+        <div class="text">
+          Найдите все значения a, при каждом из которых наибольшее значение
+          функции f(X) = |X - a| - X^2 не меньше 1
+        </div>
+        <button onclick="showModal18()" class="task4BTN">Ввести ответ</button>
+      </div>
+
+      <button class="accordion">Задание 19</button>
+      <div class="panel">
+        <div class="text">
+          а)Предьставьте число 33\100 в виде суммы нескольких дробей, все
+          числителе которых - единица, а знаменатели - попарно различные
+          натуральные числа.<br />
+          б) Представьте число 15\91 в виде суммы нескольких дробей, все
+          числители которых  — единица, а знаменатели  — попарно различные
+          натуральные числа.<br />
+          в)Найдите все возможные пары натуральных чисел m и n, для которых m <=
+          n и 1\m + 1\n = 1\14.
+        </div>
+        <button onclick="showModal19()" class="task4BTN">Ввести ответ</button>
       </div>
     </section>
-    <script src="/scriptProf.js"></script>
-    <script src="/timerProf.js"></script>
+    <footer>
+      <button id="show_result" onclick="displayQuestionState()">
+        Показать результат
+      </button>
+      <div id="quest_state_block">
+        <div>
+          Вы ответили правильно на <span id="correct_answer_count"></span> из
+          <span id="all_quest_count"></span>
+        </div>
+        <div>
+          <button onclick="dropQuestionState()">Попробовать еще раз</button>
+        </div>
+      </div>
+    </footer>
+    <div id="timer" />
+    <script src="timerProf.js"></script>
+    <script src="scriptProf.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-const TIMER_SECOND_TIME = 10800; // Сколько секунд будет идти таймер
+const TIMER_SECOND_TIME = 14400; // Сколько секунд будет идти таймер
 let timer; // переменная для хранения таймера
 
 function initTimer() {

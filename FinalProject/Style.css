@@ -116,7 +116,7 @@ btn:hover {
   align-items: center;
 }
 .text {
-  font-size: 22px;
+  font-size: 3vh;
   display: flex;
   justify-content: center;
 }
