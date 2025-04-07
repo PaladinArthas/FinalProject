@@ -63,86 +63,89 @@ function dropQuestionState() {
 }
 function showModal1() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(1, 13, answer);
+  checkCorrectAnswer(1, 27, answer);
 }
 
 function showModal2() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(2, 3241, answer);
+  checkCorrectAnswer(2, 6, answer);
 }
 function showModal3() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(3, 3, answer);
+  checkCorrectAnswer(3, 24, answer);
 }
 function showModal4() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(4, 1360, answer);
+  checkCorrectAnswer(4, 0.72, answer);
 }
 function showModal5() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(5, 0.25, answer);
+  checkCorrectAnswer(5, 5, answer);
 }
 function showModal6() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(6, 700, answer);
+  checkCorrectAnswer(6, 0.3, answer);
 }
 function showModal7() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(7, 2341, answer);
+  checkCorrectAnswer(7, -24, answer);
 }
 function showModal8() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(8, 14, answer);
+  checkCorrectAnswer(8, 6, answer);
 }
 function showModal9() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(9, 4, answer);
+  checkCorrectAnswer(9, 10, answer);
 }
 function showModal10() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(10, 155, answer);
+  checkCorrectAnswer(10, 25, answer);
 }
 function showModal11() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(11, 136, answer);
+  checkCorrectAnswer(11, 5, answer);
 }
 function showModal12() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(12, 7, answer);
+  checkCorrectAnswer(12, -5, answer);
 }
 function showModal13() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(13, 1008, answer);
+  // 2 балла
+  checkCorrectAnswer(
+    13,
+    ["{4}∩{2π/3 + 2πk, -2π/3 + 2πk: k ∈ Z}; 2π/3"],
+    answer
+  );
 }
 function showModal14() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(14, 4, answer);
+  // 3 балла
+  checkCorrectAnswer(14, "11√3/2", answer);
 }
 function showModal15() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(15, 40700, answer);
+  // 2 балла
+  checkCorrectAnswer(15, "(-∞ ; -1) U (-1 ; 0]", answer);
 }
 function showModal16() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(16, 1, answer);
+  // 2 балла
+  checkCorrectAnswer(16, 90, answer);
 }
 function showModal17() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(17, 1, answer);
+  //3 балла
+  checkCorrectAnswer(17, "2:1", answer);
 }
 function showModal18() {
   let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(18, 1432, answer);
+  // 4 балла
+  checkCorrectAnswer(18, "(-∞ ; -3/4] U [3/4 ; ∞)", answer);
 }
 function showModal19() {
   let name = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(19, 222000, answer);
-}
-function showModal20() {
-  let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(20, 7, answer);
-}
-function showModal21() {
-  let answer = prompt("Ваш ответ?", "");
-  checkCorrectAnswer(21, 27, answer);
+  //2 балла 2 ответа
+  checkCorrectAnswer(19, [Да, Да]);
 }
