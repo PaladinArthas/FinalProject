@@ -13,7 +13,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const QUEST_COUNT = 21; // кол-во вопросов
+const QUEST_COUNT = 31; // сумма всех баллов
 let questState = {};
 
 function setQuestState(questId, state) {
@@ -29,22 +29,49 @@ function setQuestState(questId, state) {
 // идВопроса (questId - можно указывать число)
 // правильный ответ (target - строка с которой сравниваем)
 // ответ пользователя (answer)
-function checkCorrectAnswer(questId, target, answer) {
+function checkCorrectAnswer(
+  questId,
+  target,
+  answer,
+  weight = 1,
+  countEach = false
+) {
+  if (countEach && Array.isArray(target) && answer.split(",").length) {
+    let answers = answer.split(",").map((a) => a.trim());
+    let correctAnswerCount = 0;
+
+    for (let i = 0; i < target.length; i++) {
+      const answerIndex = answers.findIndex((a) => a == target[i]);
+      if (answerIndex !== -1) {
+        correctAnswerCount += 1;
+        answers.splice(answerIndex, 1);
+      }
+      // записываем первую попытку в questState
+      setQuestState(`${questId}_${i}`, answerIndex !== -1 ? weight : 0);
+    }
+    alert("Ответ засчитан");
+
+    return;
+  }
+
   if (target == answer) {
     // записываем первую попытку в questState
-    setQuestState(questId, true);
+    setQuestState(questId, weight);
     alert("Правильно!");
   } else {
     // записываем первую попытку в questState
-    setQuestState(questId, false);
+    setQuestState(questId, 0);
     alert("Неправильно, решите ещё раз");
   }
 }
 
 function displayQuestionState() {
-  const correctQuestionsCount = Object.values(questState).filter(
-    (state) => state == true
-  ).length; // Фильтруем коллекцию ответов - берем только правильные (у которых state равен true)
+  const correctQuestionsCount = Object.values(questState).reduce(
+    (res, state) => {
+      res += state;
+      return res;
+    }
+  ); // Фильтруем коллекцию ответов - берем только правильные (у которых state не равен 0)
 
   document.getElementById("show_result").style.visibility = "hidden";
   document.getElementById("quest_state_block").style.visibility = "visible";
@@ -116,36 +143,37 @@ function showModal13() {
   checkCorrectAnswer(
     13,
     ["{4}∩{2π/3 + 2πk, -2π/3 + 2πk: k ∈ Z}; 2π/3"],
-    answer
+    answer,
+    2
   );
 }
 function showModal14() {
   let answer = prompt("Ваш ответ?", "");
   // 3 балла
-  checkCorrectAnswer(14, "11√3/2", answer);
+  checkCorrectAnswer(14, "11√3/2", answer, 3);
 }
 function showModal15() {
   let answer = prompt("Ваш ответ?", "");
   // 2 балла
-  checkCorrectAnswer(15, "(-∞ ; -1) U (-1 ; 0]", answer);
+  checkCorrectAnswer(15, "(-∞ ; -1) U (-1 ; 0]", answer, 2);
 }
 function showModal16() {
   let answer = prompt("Ваш ответ?", "");
   // 2 балла
-  checkCorrectAnswer(16, 90, answer);
+  checkCorrectAnswer(16, 90, answer, 2);
 }
 function showModal17() {
   let answer = prompt("Ваш ответ?", "");
   //3 балла
-  checkCorrectAnswer(17, "2:1", answer);
+  checkCorrectAnswer(17, "2:1", answer, 3);
 }
 function showModal18() {
   let answer = prompt("Ваш ответ?", "");
   // 4 балла
-  checkCorrectAnswer(18, "(-∞ ; -3/4] U [3/4 ; ∞)", answer);
+  checkCorrectAnswer(18, "(-∞ ; -3/4] U [3/4 ; ∞)", answer, 4);
 }
 function showModal19() {
-  let name = prompt("Ваш ответ?", "");
+  let answer = prompt("Ваш ответ?", "");
   //2 балла 2 ответа
-  checkCorrectAnswer(19, [Да, Да]);
+  checkCorrectAnswer(19, ["Да", "Да"], answer, 1, true);
 }
